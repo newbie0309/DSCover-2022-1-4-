@@ -32,9 +32,11 @@
 
 모델의 성능 개선 정도를 파악하거나 GridSearchCV module로 하이퍼파라미터 조합을 탐색해 조합별 성능을 비교할 때 mae, rmse, rmsle지표들을 종합해 사용했고,
 
-그 중 rmsle지표가 가장 이상치에 덜 민감하다고 해 rmsle지표를 기준으로 하이퍼파라미터 조합을 선정함. 
+그 중 rmsle지표가 가장 이상치에 덜 민감한 것으로 알려져 있어 rmsle지표를 기준으로 모델 성능을 비교하고 하이퍼파라미터 조합을 선정함.
 
-그 뒤 구현된 gui에 학습된 모델을 넣고 서비스를 만들었음.
+또한 rmsle 지표를 기준으로 모델간 결과값 앙상블인 submission ensemble 진행. 이 앙상블로 인해 성능이 소폭 향상되었음.
+
+그 뒤 gui에 학습된 모델을 넣고 서비스를 구현했음.
 
 
 발표자료 : https://drive.google.com/file/d/1sgfI5QHeHN14p4FXCe19zNI7KHhpsYjX/view?usp=sharing
